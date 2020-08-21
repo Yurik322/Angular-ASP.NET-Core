@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import {ApiService} from "./api.service";
+import { ApiService } from "./api.service";
 
 @Component({
   selector: 'question',
@@ -7,7 +7,7 @@ import {ApiService} from "./api.service";
 })
 export class QuestionComponent {
 
-  question = {}
+  question = {};
 
   constructor(private api: ApiService) {}
 
