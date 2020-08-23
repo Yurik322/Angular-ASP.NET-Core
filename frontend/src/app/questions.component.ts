@@ -7,18 +7,14 @@ import { ApiService } from "./api.service";
 })
 export class QuestionsComponent {
 
+  question = {};
   questions;
 
   constructor(private api: ApiService) {}
 
   ngOnInit(){
-    console.log("once")
     this.api.getQuestions().subscribe(res => {
       this.questions = res;
     })
-  }
-
-  post(question){
-    this.api.postQuestion(question);
   }
 }
