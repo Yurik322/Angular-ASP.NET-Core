@@ -156,5 +156,6 @@ E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\bin\Debug\netcoreapp3.
 E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\obj\Debug\netcoreapp3.1\quiz-backend.csproj.CoreCompileInputs.cache
 E:\MY PROGRAMS\Projects\C#\quiz\quiz-backend\quiz-backend\obj\Debug\netcoreapp3.1\quiz-backend.MvcApplicationPartsAssemblyInfo.cache

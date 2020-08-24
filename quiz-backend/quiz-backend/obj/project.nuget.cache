@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uK2Qxf2yhDXeC8PikRk5Z3h+mnDpUC8SmcfKYNJKH7IP/RMp3s9JSbYlaTtPgyG2iHBNqmyumqtvwD2Qhu3jwA==",
+  "dgSpecHash": "MiTpQb/8G7zFfetgnwBVejmS0HZl/4r027eQylJrKf0EZtEDlxWsMBAaMdVGRzoW7loP6sIT/WzWIgqJxFadjg==",
   "success": true,
   "projectFilePath": "E:\\MY PROGRAMS\\Projects\\C#\\quiz\\quiz-backend\\quiz-backend\\quiz-backend.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Yura\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "C:\\Users\\Yura\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.7\\microsoft.aspnetcore.cryptography.internal.3.1.7.nupkg.sha512",
     "C:\\Users\\Yura\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.7\\microsoft.aspnetcore.cryptography.keyderivation.3.1.7.nupkg.sha512",
     "C:\\Users\\Yura\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
