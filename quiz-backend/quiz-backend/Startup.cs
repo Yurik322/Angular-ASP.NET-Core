@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +33,9 @@ namespace quiz_backend
                 }));
 
             services.AddDbContext<QuizContext>(opt => opt.UseInMemoryDatabase("quiz"));
+            services.AddDbContext<UserDbContext>(opt => opt.UseInMemoryDatabase("user"));
+
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<UserDbContext>();
 
             services.AddControllers();
         }
