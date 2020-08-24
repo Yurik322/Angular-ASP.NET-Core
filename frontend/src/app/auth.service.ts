@@ -1,12 +1,15 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Subject } from "rxjs";
 import { Router } from "@angular/router";
 
 @Injectable()
 export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
+
+  get isAuthenticated(){
+    return !!localStorage.getItem('token')
+  }
 
   register(credentials){
     this.http.post<any>(`https://localhost:44370/api/account`, credentials).subscribe(res => {
@@ -23,6 +26,10 @@ export class AuthService {
   authenticate(res){
     localStorage.setItem('token', res);
 
-    this.router.navigate(['/'])
+    this.router.navigate(['/']);
+  }
+
+  logout(){
+    localStorage.removeItem('token');
   }
 }

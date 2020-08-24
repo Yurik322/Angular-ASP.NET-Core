@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
@@ -22,6 +22,12 @@ import { RegisterComponent } from "./register.component";
 import { AuthService } from "./auth.service";
 import { AuthInterceptor } from "./auth.interceptor";
 import { LoginComponent } from "./login.component";
+import { PlayComponent } from "./play.component";
+import { PlayQuizComponent } from "./playQuiz.component";
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatRadioModule } from '@angular/material/radio';
+import { FinishedComponent } from "./finished.component";
+import { MatDialogModule } from '@angular/material/dialog';
 
 const routes = [
   { path: '', component: HomeComponent },
@@ -30,6 +36,8 @@ const routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'quiz', component: QuizComponent },
+  { path: 'play', component: PlayComponent },
+  { path: 'playQuiz/:quizId', component: PlayQuizComponent }
 ]
 
 @NgModule({
@@ -42,7 +50,10 @@ const routes = [
     QuizComponent,
     QuizzesComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    PlayComponent,
+    PlayQuizComponent,
+    FinishedComponent
   ],
   imports: [
     BrowserModule,
@@ -56,13 +67,17 @@ const routes = [
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule,
+    MatRadioModule,
+    MatDialogModule
   ],
   providers: [ApiService, AuthService, {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
   }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [FinishedComponent]
 })
 export class AppModule { }
